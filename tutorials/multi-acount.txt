@@ -1,0 +1,18 @@
+========================================
+多账号管理教程
+========================================
+
+1. 编辑 multi-akun.js
+   添加账号配置:
+   { nama: '账号1', folder: './auth_akun1' }
+   { nama: '账号2', folder: './auth_akun2' }
+
+2. 运行
+   node multi-akun.js
+
+3. 每个账号会分别显示二维码
+   依次扫码登录
+
+4. Token 保存在各自的文件夹
+   ./auth_akun1/creds.json
+   ./auth_akun2/creds.json

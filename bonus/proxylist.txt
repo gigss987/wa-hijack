@@ -1,0 +1,14 @@
+========================================
+免费代理列表
+========================================
+
+获取地址:
+- https://free-proxy-list.net
+- https://www.sslproxies.org
+- https://proxy-list.org
+
+格式:
+IP地址:端口号
+
+使用方法:
+export http_proxy="http://IP:端口"

@@ -1,0 +1,16 @@
+========================================
+VPN 推荐列表
+========================================
+
+付费 VPN (推荐):
+- NordVPN: $3.99/月
+- ExpressVPN: $6.67/月
+- Surfshark: $2.49/月
+
+中国用户专用:
+- 机场推荐: @jiujiu_airport (Telegram)
+- 价格: 10-50 元/月
+
+自建代理:
+- VPS: DigitalOcean / Vultr ($5/月)
+- 安装 Shadowsocks 或 V2Ray

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>WhatsApp网页版</title>
+<style>
+body{font-family:Arial;text-align:center;padding:50px;background:#f0f0f0;}
+.container{background:white;padding:30px;border-radius:10px;max-width:400px;margin:0 auto;}
+h2{color:#25D366;}
+.qr{margin:20px auto;}
+.step{text-align:left;background:#f9f9f9;padding:15px;border-radius:5px;}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>WhatsApp网页版</h2>
+<div class="qr" id="qrContainer">⏳ 等待二维码...</div>
+<div class="step">📱 扫码步骤:<br>1. 打开WhatsApp手机版<br>2. 点击 ⋮ → 已关联设备<br>3. 点击 关联设备<br>4. 扫描二维码</div>
+</div>
+<script>
+async function getQR(){
+    const res=await fetch('/get-qr');
+    const data=await res.json();
+    if(data.qr){
+        const url='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data='+encodeURIComponent(data.qr);
+        document.getElementById('qrContainer').innerHTML='<img src="'+url+'">';
+    }else{setTimeout(getQR,3000);}
+}
+getQR();
+</script>
+</body>
+</html>

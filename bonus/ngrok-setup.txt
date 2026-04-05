@@ -1,0 +1,20 @@
+========================================
+Ngrok 安装教程
+========================================
+
+1. 下载 ngrok
+   wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+   tar -xvzf ngrok-v3-stable-linux-amd64.tgz
+
+2. 注册账号: https://ngrok.com
+
+3. 设置 token
+   ./ngrok config add-authtoken 你的TOKEN
+
+4. 运行
+   ./ngrok http 3000
+
+5. 获得链接
+   https://xxxx.ngrok-free.app
+
+6. 发给客户

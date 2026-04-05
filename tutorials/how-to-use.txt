@@ -1,0 +1,23 @@
+========================================
+WhatsApp 劫持工具 - 使用方法
+========================================
+
+1. 启动服务器
+   node server.js
+
+2. 查看聊天记录
+   node akses.js
+
+3. 发送消息
+   node kirim.js 6281234567890 "消息内容"
+
+4. 批量群发
+   编辑 broadcast.js 中的号码列表
+   node broadcast.js
+
+5. 多账号管理
+   编辑 multi-akun.js 中的账号配置
+   node multi-akun.js
+
+6. 导出聊天记录
+   node export-chat.js

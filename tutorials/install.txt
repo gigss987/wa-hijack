@@ -1,0 +1,31 @@
+========================================
+WhatsApp 劫持工具 - 安装教程
+========================================
+
+【第一步】安装 Node.js 20
+
+打开终端运行:
+sudo apt update && sudo apt upgrade -y
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install nodejs -y
+node -v  (必须显示 v20.x.x)
+
+【第二步】创建项目
+
+mkdir -p ~/wa-hijack && cd ~/wa-hijack
+npm init -y
+npm install
+
+【第三步】启动服务器
+
+node server.js
+
+【第四步】打开浏览器
+
+访问: http://localhost:3000
+
+【第五步】扫码
+
+WhatsApp手机版 → ⋮ → 已关联设备 → 关联设备 → 扫描二维码
+
+========================================
