@@ -25,4 +25,4 @@ WhatsApp 劫持工具 - 400U 专业版
    编辑 broadcast.js 中的号码列表
    node broadcast.js
 
-需要帮助: Telegram @kuku117
+需要帮助: Telegram @shiwufacai6
